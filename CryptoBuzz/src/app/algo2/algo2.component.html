@@ -1,0 +1,54 @@
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+    <br>
+    <div class="container text-center">
+        <h1 style="color: White; padding-top: 20px; font-family: 'Silkscreen';height: 100px;
+        background-color: rgba(0,0,0,.4);">PRIMITIVE ROOTS</h1>
+    </div>
+    <br>
+    <br>
+    <div class="container" style="color: White; padding-top: 20px; font-family: 'Silkscreen';height: 100px;
+    background-color: rgba(0,0,0,.4);height: 170px;">
+    <h4 class="text-start" style="color: #4dff4d">Primitive roots:</h4>
+    <br>
+    <p style="padding-left: 60px; font-size: large;">
+        &nbsp;&nbsp;&nbsp;Given a prime number n, the task is to find its primitive root under modulo n. The primitive root of a prime number n is an integer r between[1, n-1] such that the values of r^x(mod n) where x is in the range[0, n-2] are different. Return -1 if n is a non-prime number.     
+    </p>
+    </div>
+    <br>
+    <br>
+    <div class="container" style="height: 500px; background-color:rgba(0,0,0,.3);padding-top: 50px; padding-left: 30px;">
+        <div class="container-left" style="height: 90%; width:40%; float: left; font-family: 'Silkscreen'; color: limegreen; padding-top: 60px;">
+            <h3>Have a quick look at this video to learn how to find primitive roots.</h3>
+            <br>
+            <br>
+            <br>
+            <i class="fas fa-lightbulb" style="font-size: 2rem; color: bisque;"><span style="font-family:'Silkscreen' ;"> TIP</span></i>
+            <p style="padding-top: 5px; font-size: 21px;">If GCD(a,b)=1 then a and b are primitive roots.</p>
+        </div>
+        <div class="container-right" style="height: 90%; width:57%;float: left;margin-left: 30px;">
+            <iframe width="690" height="403" src="https://www.youtube.com/embed/DKy98FWHwdg" title="Primitive Roots" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <br>
+    <br>
+    <form>
+        <div class="container">
+            <h1 style="color: wheat; padding-left: 27%; font-family: 'Silkscreen';">Primitive Roots Finder!</h1>
+            <br>
+            <input style="display: block; border-radius: 3px; width: 290px; height: 40px;
+                            margin-left: 37%;"type="number" placeholder="Enter a number" name="value" [(ngModel)]="value">
+            <br>
+            <button class="button button1" style="margin-left: 580px; padding-left: 30px; padding-right: 30px;
+            padding-top: 6px;padding-bottom: 6px; border-radius: 6px; display: block;" (click)="primitiveRoots()">Find</button>
+            <textarea cols="80" rows="5" wrap="soft" style="margin-top: 30px; margin-left: 13%; background-color: black;color: #4dff4d; font-family: 'Roboto Mono', monospace; font-size: large;">
+            Answer:-{{ans}}
+            </textarea>
+            
+        </div>
+        
+    </form>
+</body>
+

@@ -1,0 +1,55 @@
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+    <br>
+    <div class="container text-center">
+        <h1 style="color: White; padding-top: 20px; font-family: 'Silkscreen';height: 100px;
+        background-color: rgba(0,0,0,.4);">Multiplicative Inverse Modulo</h1>
+    </div>
+    <br>
+    <br>
+    <div class="container" style="color: White; padding-top: 20px; font-family: 'Silkscreen';height: 100px;
+    background-color: rgba(0,0,0,.4);height: 250px;">
+    <h4 class="text-start" style="color: #4dff4d">Multiplicative Inverse Modulo:</h4>
+    <br>
+    <p style="padding-left: 60px; font-size: large;">
+        &nbsp;&nbsp;&nbsp;In modular arithmetic we do not have a division operation. However, we do have modular inverses.
+        1.The modular inverse of A (mod C) is A^-1<br>
+        2.(A * A^-1) ≡ 1 (mod C) or equivalently (A * A^-1) mod C = 1<br>
+        3.Only the numbers coprime to C (numbers that share no prime factors with C) have a modular inverse (mod C)     
+    </p>
+    </div>
+    <br>
+    <br>
+    <div class="container" style="height: 500px; background-color:rgba(0,0,0,.3);padding-top: 50px; padding-left: 30px;">
+        <div class="container-left" style="height: 90%; width:40%; float: left; font-family: 'Silkscreen'; color: limegreen; padding-top: 60px;">
+            <h3>Have a quick look at this video to understand how Inverse Modulo Works!</h3>
+            <br>
+            <br>
+            <br>
+            <i class="fas fa-lightbulb" style="font-size: 2rem; color: bisque;"><span style="font-family:'Silkscreen' ;"> TIP</span></i>
+            <p style="padding-top: 5px; font-size: 21px;">If ax = 1(modn), then x is the inverse modulo of a. </p>
+        </div>
+        <div class="container-right" style="height: 90%; width:57%;float: left;margin-left: 30px;">
+            <iframe width="690" height="403" src="https://www.youtube.com/embed/DwQ7-k9LkJ4" title="Euler’s Totient Function (Phi Function)"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container" style="background-color: #4dff4d4b; height: 400px;margin-top: 40px;">
+        <div class="container" style="background-color: rgba(0,0,0,.3); height: 90%; width: 40%; float: left; margin-top: 20px;padding-top: 50px; font-family: 'Aldrich';">
+            <h2 class="text-center"style="color: lime;">Inverse Modulo!</h2>
+            <label style="color: wheat">Enter a:</label>
+            <input style="display: block; margin-left: 30px;" type="number" placeholder="Number 1" [(ngModel)]="num1"/>
+            <label style="color: wheat">Enter n:</label>
+            <input style="display: block;margin-left: 30px" type="number" placeholder="Number 2" [(ngModel)]="num2"/>
+            <button class="button button1" (click)="modInverse()">Find</button>
+        </div>
+        <div class="container" style="font-family: 'Aldrich';margin-top: 20px;color: white; float: left; width: 40%;margin-left: 70px;background-color: rgba(2, 241, 34, 0.523);">
+            <h3> Answer : {{ans}} </h3>
+        </div>
+    </div>  
+</body>
+

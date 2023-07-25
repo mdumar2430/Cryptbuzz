@@ -1,0 +1,57 @@
+.cont{
+    background: #030303;
+    height:653px;
+    padding-top: 290px;
+    /* background-image: url("https://gifimage.net/wp-content/uploads/2017/10/matrix-background-gif.gif");  */
+    background-image: url("https://i.gifer.com/Nv2.gif");
+    background-attachment: fixed;
+    
+}
+.frame {
+	margin: 0 auto;
+	max-width: 948px;
+}
+.card a :hover{
+    background-color: #030303;
+    color: lime;
+    transition: 0.2s;
+}
+/* Create a responsive, centered, three-column grid. */
+.card-container {
+	align-items: start;
+	display: grid;
+	grid-gap: 16px;
+	grid-template-columns: repeat(auto-fit, 300px);
+	justify-content: center;
+}
+
+/* --- Optional styles (to make this pen look nice) --- */
+.frame {
+	font-family: 'Aldrich';
+}
+
+
+.card {
+	border-radius: 5px;
+	color: white;
+	text-align: center;
+	text-shadow: 1px 1px 0 #555;
+    background-color: rgba(0,0,0,0.5);
+}
+.card-container :hover{
+    background-color: lime;
+    color: black;
+    transition: 0.5s;
+}
+
+.fas {
+	font-size: 50px;
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		background-color: #111;
+		color: #fff;
+	}
+}
+

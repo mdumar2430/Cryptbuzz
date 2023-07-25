@@ -1,0 +1,58 @@
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+<body>
+    <br>
+    <div class="container text-center">
+        <h1 style="color: White; padding-top: 20px; font-family: 'Silkscreen';height: 100px;
+        background-color: rgba(0,0,0,.4);">MILLER-RABIN PRIMALITY TEST</h1>
+    </div>
+    <br>
+    <br>
+    <div class="container" style="color: White; padding-top: 20px; font-family: 'Silkscreen';height: 100px;
+    background-color: rgba(0,0,0,.4);height: 220px;">
+    <h4 class="text-start" style="color: #4dff4d">Miller-Rabin Primality test:</h4>
+    <br>
+    <p style="padding-left: 60px; font-size: large;">
+        &nbsp;&nbsp;&nbsp;The Miller–Rabin test is the most widely used probabilistic primality test. For odd
+        composite n > 1 over 75% of numbers from to 2 to n − 1 are witnesses in the Miller–Rabin
+        test for n. We will describe the test, prove the 75% lower bound (an improvement on the
+        Solovay–Strassen test), and in an appendix use the main idea in the test to show factoring
+        n into primes and computing ϕ(n) are similar computational tasks.
+    </p>        
+    </div>
+    <br>
+    <br>
+    <div class="container" style="height: 500px; background-color:rgba(0,0,0,.3);padding-top: 50px; padding-left: 30px;">
+        <div class="container-left" style="height: 90%; width:40%; float: left; font-family: 'Silkscreen'; color: limegreen; padding-top: 60px;">
+            <h3>Have a quick look at this video to learn how to find primitive roots.</h3>
+            <br>
+            <br>
+            <br>
+            <i class="fas fa-lightbulb" style="font-size: 2rem; color: bisque;"><span style="font-family:'Silkscreen' ;"> TIP</span></i>
+            <p style="padding-top: 5px; font-size: 21px;">Miller-Rabin Primality test is a probabilistic test.</p>
+        </div>
+        <div class="container-right" style="height: 90%; width:57%;float: left;margin-left: 30px;">
+            <iframe width="690" height="403" src="https://www.youtube.com/embed/8i0UnX7Snkc" title="Testing for Primality (Miller-Rabin Test)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <br>
+    <br>
+    <form>
+        <div class="container">
+            <h1  class="text-center" style="color: wheat; font-family: 'Silkscreen';">MILLER-RABIN PRIMALITY TESTER!</h1>
+            <br>
+            <input style="display: block; border-radius: 3px; width: 290px; height: 40px;
+                            margin-left: 37%;"type="number" placeholder="Enter a number" name="value" [(ngModel)]="num">
+            <br>
+            <button class="button button1" style="margin-left: 580px; padding-left: 30px; padding-right: 30px;
+            padding-top: 6px;padding-bottom: 6px; border-radius: 6px; display: block;" (click)="mrPrimalityTest()">Test</button>
+            <textarea cols="80" rows="1" wrap="soft" style="margin-top: 30px; margin-left: 13%; background-color: black;color: #4dff4d; font-family: 'Roboto Mono', monospace; font-size: large;">
+            Answer:-{{ans}}
+            </textarea>
+            
+        </div>
+        
+    </form>
+</body>
+
