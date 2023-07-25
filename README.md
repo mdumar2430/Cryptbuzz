@@ -1,2 +1,2 @@
 # Cryptbuzz
-Implementation of Cyptographic Algorithms
+Implementation of Cryptographic Algorithms
